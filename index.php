@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css called -->
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
    
     <?php 
 
-        include 'getbootstrap.php'
+        include 'getcss.php'
 
     ?>
     
@@ -21,11 +21,11 @@
 <body>
     
     <nav>
-        <label class="title">Online Covid-19 Management System</label>
+        <label class="title">Covid-19 Student Management System</label>
     </nav>
 
     <div class="section1">
-        <img class="main_logo" src="./assets/psmzalogo.png">
+        <img class="main_logo" src="psmzalogo.png">
     </div>
 
     <center>

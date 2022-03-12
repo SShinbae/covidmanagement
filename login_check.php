@@ -32,14 +32,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $_SESSION['username']=$name;
         $_SESSION['usertype']="staff";
-        header("location:./staff/staffhome.php");
+        header("location:staffhome.php");
     }
 
     elseif($row["usertype"]=="student")
     {
         $_SESSION['username']=$name;
         $_SESSION['usertype']="student";
-        header("location:./student/studenthome.php");
+        header("location:studenthome.php");
     }
 
     else

@@ -5,13 +5,13 @@ session_start();
     //this will prevent user entering the system without username
     if(!isset($_SESSION['username']))
     {
-        header("location:../index.php");
+        header("location:index.php");
     }
 
     //this will prevent user entering the system without correct usertype
-    elseif($_SESSION['usertype']!='staff')
+    elseif($_SESSION['usertype']!='student')
     {
-        header("location:../index.php");
+        header("location:index.php");
     }
 
 ?>
@@ -24,13 +24,13 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staff Dashboard</title>
+    <title>Student Dashboard</title>
 </head>
 <body>
 
-    <h1>Staff Home</h1>
+    <h1>Student Home</h1>
 
     <a href="logout.php">Logout</a>
-
+    
 </body>
 </html>

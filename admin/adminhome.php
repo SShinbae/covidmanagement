@@ -2,15 +2,17 @@
 
 session_start();
 
-//this will prevent user entering the system without username
-if (!isset($_SESSION['username'])) {
-    header("location:../index.php");
-}
+    //this will prevent user entering the system without username
+    if(!isset($_SESSION['username']))
+    {
+        header("location:../index.php");
+    }
 
-//this will prevent user entering the system without correct usertype
-elseif ($_SESSION['usertype'] != 'admin') {
-    header("location:../index.php");
-}
+    //this will prevent user entering the system without correct usertype
+    elseif($_SESSION['usertype']!='admin')
+    {
+        header("location:../index.php");
+    }
 
 ?>
 
@@ -18,27 +20,26 @@ elseif ($_SESSION['usertype'] != 'admin') {
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- style.css called -->
-    <link rel="stylesheet" type="text/css" href="./css/adminhome.css">
-
+    <link rel="stylesheet" type="text/css" href="adminhome.css">
+    
     <?php
 
-    include '../getbootstrap.php'
+        include '../getcss.php'
 
     ?>
 
     <title>Admin Dashboard</title>
-
+    
 
 </head>
 
 <body>
-
+    
     <header class="header">
         <p>Admin</p>
 
@@ -70,12 +71,11 @@ elseif ($_SESSION['usertype'] != 'admin') {
 
         </a>
 
-
+        
 
     </div>
 
 
 
 </body>
-
 </html>
