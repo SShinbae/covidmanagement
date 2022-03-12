@@ -60,6 +60,7 @@ elseif ($_SESSION['usertype'] != 'admin') {
                                                                             } ?>" class="form-control" placeholder="Search Staff">
                         <button type="submit" class="btn btn-primary">Search</button>
                         <input type="button" class="btn btn-primary" value="Reset" name="reset" onclick="window.location.href='staffmenu.php'">
+                        <input type="submit" name="" id="">
 
                     </div>
                 </form>
